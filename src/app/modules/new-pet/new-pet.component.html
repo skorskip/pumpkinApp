@@ -1,0 +1,30 @@
+<div class="new-pet-container">
+    <form [formGroup]="petForm" (ngSubmit)="submit(petForm.value)" class="form-content">
+        <mat-form-field appearance="outline" class="input-box">
+            <mat-label>Kind Of Pet</mat-label>
+            <mat-select [(value)]="petForm.age" formControlName="petType" required>
+                <mat-option value="dog">dog</mat-option>
+                <mat-option value="cat">cat</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="input-box">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name" required>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="input-box">
+            <mat-label>Breed</mat-label>
+            <input matInput placeholder="Breed" formControlName="breed" required>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="input-box">
+            <mat-label>Age</mat-label>
+            <input matInput placeholder="Age" type="number" formControlName="age" required>
+        </mat-form-field>
+        
+        <button mat-flat-button color="accent" class="submit-button">
+            Submit
+        </button>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+<div class="my-pets-container">
+    <div class="my-pets-content">
+        <div class="pets-container" *ngFor="let pet of pets">
+            <pet-card class="pet-card"
+            [pet] = "pet">
+            </pet-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.pet-attr-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin: 5px;
+}
+
+.pet-attr-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.icon {
+    transform: scale(1.5);
+    margin: 10px;
+}
+
+.label {
+    font-size: .5em;
+}
+
+.content {
+    font-size: 1em;
+}

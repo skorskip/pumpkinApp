@@ -1,0 +1,30 @@
+<div class="pet-card">
+    <div class="icon-container" [ngClass]="{
+        'cat-background': pet.petType == 'cat',
+        'dog-background': pet.petType == 'dog'}">
+        <img class="pet-icon" src='../../../assets/icons/{{pet.petType}}_icon.png'>
+    </div>
+    <div class="card-content">
+        <div class="header">
+            <div class="title primary-color">
+                {{pet.name | titlecase}}
+            </div>
+            <div class="pet-id">
+                <mat-icon class="id-icon">loyalty</mat-icon>
+                {{pet.id}}
+            </div>
+        </div>
+        <div class="card-attribute">
+            <pet-attribute
+                [icon]="'cake'"
+                [label]="'age'"
+                [content]="pet.age">
+            </pet-attribute>
+            <pet-attribute
+                [icon]="'style'"
+                [label]="'breed'"
+                [content]="pet.breed">
+            </pet-attribute>
+        </div>
+    </div>
+</div>

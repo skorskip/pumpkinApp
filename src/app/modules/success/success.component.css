@@ -1,0 +1,12 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.content {
+    border-radius: 18px;
+    padding: 50px;
+}
